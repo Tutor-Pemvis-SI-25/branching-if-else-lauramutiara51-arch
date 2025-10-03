@@ -1,4 +1,5 @@
 // 12S25014_laura kasih mutiara
+
 import java.util.*;
 import java.lang.Math;
 
@@ -11,22 +12,22 @@ public class T00 {
         a = Integer.parseInt(input.nextLine());
         b = Integer.parseInt(input.nextLine());
         if (a % 2 == 0) {
-            System.out.println("bilangan pertama:genap");
+            System.out.println("Bilangan pertama: Genap");
         } else {
-            System.out.println("bilangan pertama:ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (b % 2 == 0) {
-            System.out.println("bilangan pertama:genap");
+            System.out.println("Bilangan pertama:Genap");
         } else {
-            System.out.println("bilangan pertama:ganjil");
+            System.out.println("Bilangan pertama: Ganjil");
         }
         if (a > b) {
-            System.out.println("bilangan pertama lebih besar");
+            System.out.println("Bilangan pertama lebih besar");
         } else {
             if (a < b) {
-                System.out.println("bilangan kedua lebih besar");
+                System.out.println("Bilangan kedua lebih besar");
             } else {
-                System.out.println("kedua bilangan sama besar");
+                System.out.println("Kedua bilangan sama besar");
             }
         }
         if (a % 2 == 0 && b % 2 == 0) {
@@ -37,7 +38,7 @@ public class T00 {
                 ganjil = a * b;
                 System.out.println("Hasil perkalian: " + ganjil);
             } else {
-                System.out.println("berbeda jenis");
+                System.out.println("Berbeda jenis");
             }
         }
     }

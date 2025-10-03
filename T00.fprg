@@ -4,60 +4,60 @@
         <attribute name="name" value="pair 25"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 02:15:33 PM"/>
+        <attribute name="saved" value="2025-10-03 03:03:59 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMTswODoyMzoxMyBQTTsyNjQw"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMzswMjoxNTozMyBQTTszOzI3NDk="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMzswMzowMzo1OSBQTTs0OzI3NTY="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b, ganjil, genap" type="Integer" array="False" size=""/>
+            <declare name="a, b, Ganjil, Genap" type="Integer" array="False" size=""/>
             <input variable="a"/>
             <input variable="b"/>
             <if expression="a%2=0">
                 <then>
-                    <output expression="&quot;bilangan pertama:genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;bilangan pertama:ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="b%2=0">
                 <then>
-                    <output expression="&quot;bilangan pertama:genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama:Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;bilangan pertama:ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="a&gt;b">
                 <then>
-                    <output expression="&quot;bilangan pertama lebih besar&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
                     <if expression="a&lt;b">
                         <then>
-                            <output expression="&quot;bilangan kedua lebih besar&quot;" newline="True"/>
+                            <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;kedua bilangan sama besar&quot;" newline="True"/>
+                            <output expression="&quot;Kedua bilangan sama besar&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
             </if>
             <if expression="(a%2=0)&amp;&amp;(b%2=0)">
                 <then>
-                    <assign variable="genap" expression="a+b"/>
-                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;genap" newline="True"/>
+                    <assign variable="Genap" expression="a+b"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;Genap" newline="True"/>
                 </then>
                 <else>
                     <if expression="(a%2!=0)&amp;&amp;(b%2!=0)">
                         <then>
-                            <assign variable="ganjil" expression="a*b"/>
-                            <output expression="&quot;Hasil perkalian: &quot;&amp;ganjil" newline="True"/>
+                            <assign variable="Ganjil" expression="a*b"/>
+                            <output expression="&quot;Hasil perkalian: &quot;&amp;Ganjil" newline="True"/>
                         </then>
                         <else>
-                            <output expression="&quot;berbeda jenis&quot;" newline="True"/>
+                            <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
                         </else>
                     </if>
                 </else>
