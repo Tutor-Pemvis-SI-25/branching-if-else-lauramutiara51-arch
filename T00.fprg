@@ -1,20 +1,22 @@
 <?xml version="1.0"?>
 <flowgorithm fileversion="4.2">
     <attributes>
-        <attribute name="name" value="pair 25"/>
-        <attribute name="authors" value="ASUS"/>
+        <attribute name="name" value="TU01"/>
+        <attribute name="authors" value="LOQ"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 03:09:54 PM"/>
-        <attribute name="created" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMTswODoyMzoxMyBQTTsyNjQw"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMzswMzowOTo1NCBQTTs1OzI3NTg="/>
+        <attribute name="saved" value="2025-10-03 02:08:13 PM"/>
+        <attribute name="created" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAxOzA4OjI0OjQ3IFBNOzI1Nzk="/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzExOjQ0OjU0IEFNOzM7QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTtUMDBbMV0uZnByZzs2MzI3"/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzAxOjU4OjQwIFBNOzE7QVNVUztMQVBUT1AtRkwzNUVORU87MjAyNS0xMC0wMTswODoyMTo0OSBQTTtUMDBbMl0uZnByZzs2MzQw"/>
+        <attribute name="edited" value="TE9RO0xBUFRPUC1VOFZUMlM5NTsyMDI1LTEwLTAzOzAyOjA4OjEzIFBNOzExOzI3Mjc="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
         <body>
-            <declare name="a, b, Ganjil, Genap" type="Integer" array="False" size=""/>
-            <input variable="a"/>
-            <input variable="b"/>
-            <if expression="a%2=0">
+            <declare name="x, y, tambah, kali" type="Integer" array="False" size=""/>
+            <input variable="x"/>
+            <input variable="y"/>
+            <if expression="x MOD 2 == 0">
                 <then>
                     <output expression="&quot;Bilangan pertama: Genap&quot;" newline="True"/>
                 </then>
@@ -22,7 +24,7 @@
                     <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="b%2=0">
+            <if expression="y MOD 2 == 0">
                 <then>
                     <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
@@ -30,12 +32,12 @@
                     <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
-            <if expression="a&gt;b">
+            <if expression="x&gt;y">
                 <then>
                     <output expression="&quot;Bilangan pertama lebih besar&quot;" newline="True"/>
                 </then>
                 <else>
-                    <if expression="a&lt;b">
+                    <if expression="x&lt;y">
                         <then>
                             <output expression="&quot;Bilangan kedua lebih besar&quot;" newline="True"/>
                         </then>
@@ -45,20 +47,31 @@
                     </if>
                 </else>
             </if>
-            <if expression="(a%2=0)&amp;&amp;(b%2=0)">
+            <if expression="x mod 2 == 0 &amp;&amp; y mod 2 == 0">
                 <then>
-                    <assign variable="Genap" expression="a+b"/>
-                    <output expression="&quot;Hasil penjumlahan: &quot;&amp;Genap" newline="True"/>
+                    <assign variable="tambah" expression="x + y"/>
+                    <output expression="&quot;Hasil penjumlahan: &quot; &amp; tambah" newline="True"/>
                 </then>
                 <else>
-                    <if expression="(a%2!=0)&amp;&amp;(b%2!=0)">
+                    <if expression="x mod 2 != 0 &amp;&amp; y mod 2 != 0">
                         <then>
-                            <assign variable="Ganjil" expression="a*b"/>
-                            <output expression="&quot;Hasil perkalian: &quot;&amp;Ganjil" newline="True"/>
+                            <assign variable="kali" expression="x * y"/>
+                            <output expression="&quot;Hasil perkalian: &quot; &amp; kali" newline="True"/>
                         </then>
-                        <else>
+                        <else/>
+                    </if>
+                </else>
+            </if>
+            <if expression="x mod 2!=0 &amp;&amp; y mod 2==0">
+                <then>
+                    <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
+                </then>
+                <else>
+                    <if expression="y mod 2!=0 &amp;&amp; x mod 2==0">
+                        <then>
                             <output expression="&quot;Berbeda jenis&quot;" newline="True"/>
-                        </else>
+                        </then>
+                        <else/>
                     </if>
                 </else>
             </if>

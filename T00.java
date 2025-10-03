@@ -1,45 +1,27 @@
-// 12S25014_laura kasih mutiara
+// 12S25014-Laura kasih mutiara
+// 12S25016-Loviska astria pasaribu
 
 import java.util.*;
 import java.lang.Math;
 
-public class T00 {
+public class T01 {
     private static Scanner input = new Scanner(System.in);
 
     public static void main(String[] args) {
-        int a, b, ganjil, genap;
+        String iSBN, judul, penulis, tahunterbit, penerbit, formatbukuelektranik;
+        int stok;
+        double hargapembelian, minimummargin, rating;
 
-        a = Integer.parseInt(input.nextLine());
-        b = Integer.parseInt(input.nextLine());
-        if (a % 2 == 0) {
-            System.out.println("Bilangan pertama: Genap");
-        } else {
-            System.out.println("Bilangan pertama: Ganjil");
-        }
-        if (b % 2 == 0) {
-            System.out.println("Bilangan pertama:Genap");
-        } else {
-            System.out.println("Bilangan pertama: Ganjil");
-        }
-        if (a > b) {
-            System.out.println("Bilangan pertama lebih besar");
-        } else {
-            if (a < b) {
-                System.out.println("Bilangan kedua lebih besar");
-            } else {
-                System.out.println("Kedua bilangan sama besar");
-            }
-        }
-        if (a % 2 == 0 && b % 2 == 0) {
-            genap = a + b;
-            System.out.println("Hasil penjumlahan: " + genap);
-        } else {
-            if (a % 2 != 0 && b % 2 != 0) {
-                ganjil = a * b;
-                System.out.println("Hasil perkalian: " + ganjil);
-            } else {
-                System.out.println("Berbeda jenis");
-            }
-        }
+        iSBN = input.nextLine();
+        judul = input.nextLine();
+        penulis = input.nextLine();
+        tahunterbit = input.nextLine();
+        penerbit = input.nextLine();
+        formatbukuelektranik = input.nextLine();
+        hargapembelian = Double.parseDouble(input.nextLine());
+        minimummargin = Double.parseDouble(input.nextLine());
+        stok = Integer.parseInt(input.nextLine());
+        rating = Double.parseDouble(input.nextLine());
+        System.out.println(iSBN + "|" + judul + "|" + penulis + "|" + tahunterbit + "|" + penerbit + "|" + formatbukuelektranik + "|" + hargapembelian + "|" + minimummargin + "|" + stok + "|" + rating);
     }
 }
