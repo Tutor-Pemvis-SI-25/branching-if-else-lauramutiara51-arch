@@ -4,9 +4,9 @@
         <attribute name="name" value="pair 25"/>
         <attribute name="authors" value="ASUS"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2025-10-03 03:03:59 PM"/>
+        <attribute name="saved" value="2025-10-03 03:09:54 PM"/>
         <attribute name="created" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMTswODoyMzoxMyBQTTsyNjQw"/>
-        <attribute name="edited" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMzswMzowMzo1OSBQTTs0OzI3NTY="/>
+        <attribute name="edited" value="QVNVUztMQVBUT1AtQTM4UVRDOFM7MjAyNS0xMC0wMzswMzowOTo1NCBQTTs1OzI3NTg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -24,10 +24,10 @@
             </if>
             <if expression="b%2=0">
                 <then>
-                    <output expression="&quot;Bilangan pertama:Genap&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Genap&quot;" newline="True"/>
                 </then>
                 <else>
-                    <output expression="&quot;Bilangan pertama: Ganjil&quot;" newline="True"/>
+                    <output expression="&quot;Bilangan kedua: Ganjil&quot;" newline="True"/>
                 </else>
             </if>
             <if expression="a&gt;b">
